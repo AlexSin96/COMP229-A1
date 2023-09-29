@@ -1,0 +1,90 @@
+<!--Name: Leck Sane Hariniaina Alexandre, SIN-->
+<!--Student number: 301315361-->
+<!--Date: 2023/09/30-->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container">
+  <div class="jumbotron">
+  
+  <!--My contact information-->
+  <br>
+  <h2>Get in touch with me</h2>
+  
+  <p>
+  Phone number: (437) 329-0989<br>
+  Email: xianlishan.alex@gmail.com<br>
+  LinkedIn: https://www.linkedin.com/in/alexandre-sin-246644170/
+  <br>
+  
+  <!--Form to send message  to me-->
+  Please fill in the form below if to uwant to send me a message!<br>
+  
+  </p>
+  <br>
+
+  <form action="mailto:lsin5@my.centennialcollege.ca" method="post">
+    
+    <h2>Contact Form</h2>
+
+    <fieldset>
+      <legend>PERSONAL INFO</legend>
+      <p>
+        <label for="txtFName"> First Name:</label>
+        <input id="txtFName" name="txtFName" size="25"  type="text" required="required">
+      </p>
+      <p>
+        <label for="txtLName"> Last Name:</label>
+        <input id="txtLName" name="txtFName" size="25"  type="text" required="required">
+      </p>
+      <p>
+        <label for="phone">Your phone number:</label>
+        <input type="tel" id="phone" name="phone">
+      </p>
+      <p>
+        <label for="email"> Your e-mail address:</label>
+        <input type="email" id="email" name="email" size="25" required="required">
+      </p>
+      <p>
+        <label for="company"> Your company name:</label>
+        <input id="company" name="company" size="25" required="required">
+      </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+     <legend>Message</legend>
+     <p>
+      <label for="comments"> What can I do to help you ? </label>
+      <br>
+      <textarea name="txtBestthing" rows="4" cols="80">---Please write your message here---</textarea>
+     </p>
+    </fieldset>
+
+    <p>
+     <input name="btnSubmit" type="submit" value="Submit form">
+     <input name="btnReset" type="reset" value="Reset form">
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+  </form>
+
+    </div>
+    </main>
+    
+    <!--bottom nav-->
+    
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+   
